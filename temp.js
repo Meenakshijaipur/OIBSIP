@@ -16,9 +16,9 @@ function toCelsius() {
         document.querySelector(".content h1").innerHTML = "Enter a valid value";
 
     } 
-    setTimeout(
+    setTimeout( () => {
         searchBox.value = "";
-    )
+    }, 100);
 }
 
 
@@ -33,9 +33,8 @@ function toFahrenheit() {
         document.querySelector(".content h1").innerHTML = "Enter a valid value";
 
     }
-    setTimeout(
-        searchBox.value = "";
-    )
+    setTimeout( () => { 
+        searchBox.value = "";} , 100 );
     
 }
 
@@ -44,14 +43,19 @@ function toKelvin() {
     const inputValue = parseFloat(searchBox.value);
 
     if (! isNaN(inputValue)) {
-        convertedTemp = (inputValue * 9/5)+32;
+        convertedTemp = (inputValue + 273.15);
         document.querySelector(".content h1").innerHTML = convertedTemp.toFixed(2) + "K";
     }
     else {
         document.querySelector(".content h1").innerHTML = "Enter a valid value";
 
     }
-    setTimeout(
+    setTimeout( () => {
         searchBox.value = "";
-    )
+    },100);
+    
 }
+
+celsius.addEventListener("click", toCelsius);
+fahrenheit.addEventListener("click", toFahrenheit);
+kelvin.addEventListener("click",toKelvin);

@@ -1,9 +1,8 @@
-*{
-    box-sizing: border-box;
-    
-}
+
 .body{
-    
+    box-sizing: border-box;
+    background-color: burlywood;
+    overflow: hidden;
 }
 .main{
     background: linear-gradient(180deg,rgb(240, 0, 64), #ff8000); 
@@ -14,21 +13,24 @@
     margin-right: auto;
     text-align: center;
     color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 40px 35px;
     box-sizing: inherit;
     box-shadow: 0px 0px 45px rgb(128, 15, 0);
+    font-family: 'jost';
 }
 .search{
-    border: 0%;
     outline: 0%;
-    margin-left: 15px;
+    border: 0%;
+    margin-left: 4px;
     margin-right: 15px;
     padding: 10px 25px;
     outline: 1;
     font-size: 20px;
     flex: 1;
-    border-radius: 10px;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    color: black;
 }
 .content{
     margin: 30px 10px;
@@ -42,13 +44,14 @@
     font-weight: bold;
 }
 .button{
-    border: 0%;
-    outline: 0%;
     padding: 10px 25px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 20px;
     flex: 1;
-    border-radius: 10px;
+    border-radius: 50px;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
     
 }

@@ -3,9 +3,21 @@
     
 }
 .body{
-    back
+    
 }
 .main{
+    background: linear-gradient(180deg,rgb(240, 0, 64), #ff8000); 
+    max-width: 470px;
+    width: 80%;
+    margin-left: auto;
+    margin-top: 10%;
+    margin-right: auto;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 20px;
+    padding: 40px 35px;
+    
+
     
 
 }
